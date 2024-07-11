@@ -1,0 +1,4 @@
+#!/bin/bash
+export APPDIR=$(dirname "$(readlink -f "$0")")
+export PERL5LIB=$APPDIR/lib/perl5/
+exec "$APPDIR/bin/gtk-pipe-viewer"
